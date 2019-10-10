@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div class="menu">
+		<a id="mycart" onmouseover="showIt()" onmouseout="hiddenIt()">My Cart</a>
+	</div>
+
+	<div class="container">
+		<div class="teepic">
+			<img src="classic-tee.jpg">
+			
+		</div>
+		<div class="detail">
+			<h3>Classic Tee</h3>
+			<hr>
+			<strong style="font-size: 14px">$75.00</strong>
+			<hr>
+			<p style="font-size: 12px;line-height: 20px">Dolor sit amet, consectetur adipiscing elit.
+			Haec et tu ita posuisti, et verba vestra sunt. Quod autem ratione actum est,id officium appellamus dolor sit amet,
+		consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod
+	autem ratione actum est, id officium appellamus</p>
+		
+		<p style="font-size: 12px;font-weight: bold;margin-top: 30px;">SIZE<span style="color:#C90000;margin-right:7px;">*</span><span id="size1"></span></p>
+		<a><div class="size" id="smallsize" onclick="addToSmall()" >S</div></a>
+		<div class="size" id="mediumsize" onclick="addToMedium()">M</div>
+		<div class="size" id="largesize"onclick="addToLarge()">L</div>
+		<div class="clear"></div>
+		<div class="add">ADD TO CART</div>
+
+		</div>
+		<div class="minicart" id="minicart" onmouseover="showIt()" onmouseleave="hiddenIt()">
+			<div class="small">
+				<img src="classic-tee.jpg" style="width:28%; float:left;">
+				<div class="minicart-right">
+					<p>Classic Tee</p>
+					<p>1 * <strong>$75.00</strong></p>
+					<p>Size:S</p>
+				</div>
+
+				
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="large">
+				
+			 <img src="classic-tee.jpg" style="width:28%; float: left;">
+
+			    <div class="minicart-right">
+				   
+					<p>Classic Tee</p>
+					<p>1 * <strong>$75.00</strong></p>
+					<p>Size:L</p>
+				</div>
+		    </div>
+
+		</div>
+
+		
+	</div>
+
+   
+</body>
+</html>

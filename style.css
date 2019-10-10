@@ -240,7 +240,11 @@ hr{display:none;}
 	background:white;
 	display:none;
 }
-
+.add:hover{
+	background:#222222;
+	color:white;
+	transition-duration:0.2s;
+}
 .small{
 	margin-top: 20px;
 	margin-left: 20px;

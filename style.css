@@ -80,7 +80,7 @@ hr{ background: ghostwhite; border: none; height: 1px; }
 }
 .add{
 	width:150px;
-	height:30px;
+	height:50px;
 	border:2px solid #222222;
 	margin-top: 23px;
 	line-height: 32px;
@@ -103,8 +103,9 @@ hr{ background: ghostwhite; border: none; height: 1px; }
 	height:10px;
 }
 .minicart{
+	display:none;
 	width:350px;
-	height:330px;
+	height:530px;
 	border: 1px solid #CCCCCC;
 	position: absolute;
 	right:0;
@@ -114,15 +115,37 @@ hr{ background: ghostwhite; border: none; height: 1px; }
 	
 
 }
+
+.minicart ul li{
+	list-style-type: none;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}
 .small{
+	display: none;
 	margin-top: 20px;
 	margin-left: 20px;
 	width:90%;
+	height: 135px;
+	
+}
+
+.medium{
+	display:none;
+	margin-top: 20px;
+	margin-left: 20px;
+	width:90%;
+	height: 135px;
+	
 }
 .large{
+	display:none;
 	margin-top: 20px;
 	margin-left: 20px;
 	width:90%;
+	height: 135px;
+	
 }
 .minicart-right{
 	float:left;
@@ -141,8 +164,25 @@ hr{ background: ghostwhite; border: none; height: 1px; }
 	margin-bottom: 10px;
 }
 
-}
+.empty{
+	text-align: center;
+	line-height: 530px;
+	color:#888888;
 
+}
+#highlight{
+	height:20px;
+	width:30px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 20px;
+}
+@keyframes hlight{
+	0%{color:#888888;	}
+	70%{color:red;}
+	100%{color:#888888;	}
+}
 
 
 

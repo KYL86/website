@@ -28,40 +28,61 @@
 		consectetur adipiscing elit. Haec et tu ita posuisti, et verba vestra sunt. Quod
 	autem ratione actum est, id officium appellamus</p>
 		
-		<p style="font-size: 12px;font-weight: bold;margin-top: 30px;">SIZE<span style="color:#C90000;margin-right:7px;">*</span><span id="size1"></span></p>
+		<p  style="font-size: 12px;font-weight: bold;margin-top: 30px;"><span id="highlight">SIZE</span><span style="color:#C90000;margin-right:7px;">*</span><span id="size1"></span></p>
 		<a><div class="size" id="smallsize" onclick="addToSmall()" >S</div></a>
 		<div class="size" id="mediumsize" onclick="addToMedium()">M</div>
 		<div class="size" id="largesize"onclick="addToLarge()">L</div>
 		<div class="clear"></div>
-		<div class="add">ADD TO CART</div>
+		<button id="add" class="add" onclick="addToCart()">ADD TO CART</button>
 
 		</div>
 		<div class="minicart" id="minicart" onmouseover="showIt()" onmouseleave="hiddenIt()">
-			<div class="small">
+			<div id="small" class="small" >
 				<img src="classic-tee.jpg" style="width:28%; float:left;">
 				<div class="minicart-right">
-					<p>Classic Tee</p>
-					<p>1 * <strong>$75.00</strong></p>
-					<p>Size:S</p>
+					<ul>
+						<li>Classic Tee</li>
+					    <li id="squantity" style="display: inline;">0</li> <li style="display: inline;">* <strong id="price">$75.00</strong></li>
+					    <li>Size:S</li>
+				    </ul>
+				</div>
+
+				
+
+			</div>
+			<div class="clear"></div>
+
+			<div id="medium" class="medium" >
+				<img src="classic-tee.jpg" style="width:28%; float:left;">
+				<div class="minicart-right">
+					<ul>
+						<li>Classic Tee</li>
+					    <li id="mquantity" style="display: inline;">0</li> <li style="display: inline;">* <strong id="price">$75.00</strong></li>
+					    <li>Size:M</li>
+				    </ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="large" class="large" >
+				<img src="classic-tee.jpg" style="width:28%; float:left;">
+				<div class="minicart-right">
+					<ul>
+						<li>Classic Tee</li>
+					    <li id="lquantity" style="display: inline;">0</li> <li style="display: inline;">* <strong id="price">$75.00</strong></li>
+					    <li>Size:L</li>
+				    </ul>
 				</div>
 
 				
 
 			</div>
 
+
 			<div class="clear"></div>
 
-			<div class="large">
-				
-			 <img src="classic-tee.jpg" style="width:28%; float: left;">
-
-			    <div class="minicart-right">
-				   
-					<p>Classic Tee</p>
-					<p>1 * <strong>$75.00</strong></p>
-					<p>Size:L</p>
-				</div>
-		    </div>
+			<div id="empty" class="empty">Your Cart is Empty</div>
+		    
 
 		</div>
 
